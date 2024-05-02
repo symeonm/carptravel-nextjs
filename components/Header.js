@@ -3,6 +3,7 @@ import Link from "next/link";
 import logo from "../public/image/Header/RectanglelogoCarp.svg";
 import logoText from "../public/image/Header/CarpTravelTextlogo.svg";
 import { useState } from "react";
+import NavigationHeader from "./NavigationHeader";
 
 export default function Header() {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -26,13 +27,13 @@ export default function Header() {
         </Link>
         <button
           type="button"
-          className=" md:hidden text-[14px] tracking-[1.4px] uppercase text-white"
+          className="md:hidden text-[14px] tracking-[1.4px] uppercase text-white"
           onClick={toggleMenu}
         >
           MENU
         </button>
         {mobileMenu && (
-          <div className=" fixed top-0 right-0 bottom-0 left-0 bg-[rgb(1,10,5,0.75)] backdrop-blur-[25px] text-white">
+          <div className="fixed top-0 right-0 bottom-0 left-0 bg-[rgb(1,10,5,0.75)] backdrop-blur-[25px] text-white">
             <button
               type="button"
               onClick={toggleMenu}
@@ -84,6 +85,7 @@ export default function Header() {
             </ul>
           </div>
         )}
+        <NavigationHeader />
       </nav>
     </header>
   );
