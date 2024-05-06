@@ -33,7 +33,8 @@ export default function Header() {
           MENU
         </button>
         {mobileMenu && (
-          <div className="fixed top-0 right-0 bottom-0 left-0 bg-[rgb(1,10,5,0.75)] backdrop-blur-[25px] text-white">
+          // <div className="shadow-md transition-all duration-500 opacity-1 w-screen h-screen">
+          <div className="fixed top-0 right-0 bottom-0 left-0  bg-[rgb(1,10,5)] backdrop-blur-[25px] bg-opacity-[0.75] text-white w-screen h-screen z-20">
             <button
               type="button"
               onClick={toggleMenu}
@@ -84,6 +85,7 @@ export default function Header() {
               </li>
             </ul>
           </div>
+          // </div>
         )}
         <NavigationHeader />
       </nav>

@@ -10,6 +10,7 @@ module.exports = {
       backgroundImage: {
         hero: "url(../public/image/Hero/backgroundhero.jpg)",
         heroDesk: "url(../public/image/Hero/backgroundhero-desk.jpg)",
+        gallaryBg: "url(../public/image/Gallery/gallery-bg.jpg)",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
